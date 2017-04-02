@@ -19,7 +19,7 @@ import com.atithi.rest.services.ImageService;
 public class ImageServiceImpl implements ImageService {
 
 	//
-	private static final String SERVER_IP ="http://54.200.239.59:8080";
+	private static final String SERVER_IP ="http://54.144.229.117:8080";
 	//server Path
 	public static final String PATH_TO_STORE ="/opt/apache-tomcat-8.0.33/webapps/ImageManager/imageStore/";
 			//"E:/Sunbeam/apache-tomcat-8.0.33/webapps/ImageManager/imageStore/";
