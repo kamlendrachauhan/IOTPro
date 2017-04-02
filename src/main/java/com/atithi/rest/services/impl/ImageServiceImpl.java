@@ -21,7 +21,7 @@ public class ImageServiceImpl implements ImageService {
 	//
 	private static final String SERVER_IP ="http://54.144.229.117:8080";
 	//server Path
-	public static final String PATH_TO_STORE ="/opt/apache-tomcat-8.0.33/webapps/ImageManager/imageStore/";
+	public static final String PATH_TO_STORE ="/opt/apache-tomcat-8.5.13/webapps/ImageManager/imageStore/";
 			//"E:/Sunbeam/apache-tomcat-8.0.33/webapps/ImageManager/imageStore/";
 			//
 			

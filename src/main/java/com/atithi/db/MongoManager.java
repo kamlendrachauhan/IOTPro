@@ -42,7 +42,7 @@ public class MongoManager {
 	 private MongoDatabase db;
 	 private final static String DATABASE_NAME = "RASP";
 	 private final static String DB_IP = "54.144.229.117:27017";
-	 private static final String URL ="mongodb://RASP_DB_USER:RASP_DB_USER@"+DB_IP+"/"+DATABASE_NAME;
+	 private static final String URL ="mongodb://"+DB_IP+"/"+DATABASE_NAME;
 			 //"mongodb://test1:test1@localhost:27017/Rasp"; 
 			 ////"mongodb://myUserAdmin:abc123@54.186.113.130:27017/RASP";
 			 //"mongodb://RASP_DB_USER:RASP_DB_USER@54.186.113.130:27017/RASP";
