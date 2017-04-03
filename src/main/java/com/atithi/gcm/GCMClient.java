@@ -37,8 +37,8 @@ public class GCMClient {
 	//this should be unique  to each XMPP message sent
 	private static String messageID =""; 
 	
-	private static final String ENDPOINT_HOST ="fcm-xmpp.googleapis.com";//"gcm-preprod.googleapis.com";
-	private static final int ENDPOINT_HOST_PORT =5236;
+	private static final String ENDPOINT_HOST ="gcm.googleapis.com";//"gcm-preprod.googleapis.com";
+	private static final int ENDPOINT_HOST_PORT =5235;
 	//Sender ID is required for the app server to GCM
 	//connection: user@domain/resource      user@gcm-preprod.googleapis.com/865254607161
 	//XML Stanzas <message> <presense> <iq>(get ot post request)
