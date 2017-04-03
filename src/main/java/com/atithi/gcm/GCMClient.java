@@ -38,7 +38,7 @@ public class GCMClient {
 	private static String messageID =""; 
 	
 	private static final String ENDPOINT_HOST ="fcm-xmpp.googleapis.com";//"gcm-preprod.googleapis.com";
-	private static final int ENDPOINT_HOST_PORT =5235;
+	private static final int ENDPOINT_HOST_PORT =5236;
 	//Sender ID is required for the app server to GCM
 	//connection: user@domain/resource      user@gcm-preprod.googleapis.com/865254607161
 	//XML Stanzas <message> <presense> <iq>(get ot post request)
@@ -266,6 +266,8 @@ public class GCMClient {
         final Map<String, String> payload = new HashMap<String, String>();
         //test Message
         payload.put("message", file_URL);//"http://www.hdwallpapersact.com/wp-content/uploads/2012/05/sachin115.jpg"
+        payload.put("title", "New Message from IOT");
+        payload.put("body", "New Picture");
         final String collapseKey = "sample";
         Long timeToLive = 10000L;
         Boolean delayWhileIdle = true;
