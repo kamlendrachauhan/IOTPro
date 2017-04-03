@@ -29,9 +29,9 @@ import org.jivesoftware.smack.XMPPException;
 
 public class GCMClient {
 
-	public static final String SENDER_ID ="865254607161";
+	public static final String SENDER_ID ="730949324782";
 	//Included in HTTP
-	private static final String SERVER_API_KEY ="AIzaSyB6w_YUhaJ0iRO-g4W_X8_yjq-02XXAXYs";
+	private static final String SERVER_API_KEY ="AIzaSyDiARGLV-_GBJLceCf2CD1s33e4UJIURLk";
 	
 	//Whom to send
 	//May be INSTANCE_ID
