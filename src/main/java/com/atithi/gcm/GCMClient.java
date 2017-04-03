@@ -25,7 +25,7 @@ public class GCMClient {
 
 	public static final String SENDER_ID ="627066340321";
 	//Included in HTTP
-	private static final String SERVER_API_KEY ="AIzaSyCZGz9TU88WOtzXvQSGy2lHehHeJ-XrMn0";
+	private static final String SERVER_API_KEY ="AAAAkgARA-E:APA91bFokq1Fs0UogZa4WNWLec7kouYmtltD0GqAEDimby-Q_SIoDEr24D77KccSG7HM6EcFxubP8Cjfe2oiX33FFzybww_-Ja5QKIHrgKIEEX4DWTx8issicXQ6pl0qV8zglXXQBzuh9t02umeOmlbrNy1f7_5T5g";
 	
 	//Whom to send
 	//May be INSTANCE_ID
