@@ -1,9 +1,5 @@
 package com.atithi.gcm;
 
-import org.jivesoftware.smack.PacketCollector;
-//import org.jivesoftware.smack.PacketCollector.Configuration;
-import org.jivesoftware.smack.PacketListener;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
@@ -11,27 +7,25 @@ import java.util.Random;
 import javax.net.ssl.SSLSocketFactory;
 
 import org.jivesoftware.smack.ConnectionConfiguration;
-import org.jivesoftware.smack.AbstractConnectionListener;
 import org.jivesoftware.smack.ConnectionConfiguration.SecurityMode;
-import org.jivesoftware.smack.filter.PacketFilter;
+import org.jivesoftware.smack.ConnectionListener;
+//import org.jivesoftware.smack.PacketCollector.Configuration;
+import org.jivesoftware.smack.PacketListener;
+import org.jivesoftware.smack.XMPPConnection;
+import org.jivesoftware.smack.XMPPException;
 import org.jivesoftware.smack.filter.PacketTypeFilter;
 import org.jivesoftware.smack.packet.DefaultPacketExtension;
 import org.jivesoftware.smack.packet.Message;
 import org.jivesoftware.smack.packet.Packet;
 import org.jivesoftware.smack.packet.PacketExtension;
 import org.jivesoftware.smack.util.StringUtils;
-import org.jivesoftware.smack.util.XmlStringBuilder;
 import org.json.simple.JSONValue;
-import org.jivesoftware.smack.ConnectionListener;
-import org.jivesoftware.smack.XMPPConnection;
-import org.jivesoftware.smack.XMPPConnectionRegistry;
-import org.jivesoftware.smack.XMPPException;
 
 public class GCMClient {
 
-	public static final String SENDER_ID ="730949324782";
+	public static final String SENDER_ID ="627066340321";
 	//Included in HTTP
-	private static final String SERVER_API_KEY ="AIzaSyDiARGLV-_GBJLceCf2CD1s33e4UJIURLk";
+	private static final String SERVER_API_KEY ="AIzaSyCZGz9TU88WOtzXvQSGy2lHehHeJ-XrMn0";
 	
 	//Whom to send
 	//May be INSTANCE_ID
@@ -43,7 +37,7 @@ public class GCMClient {
 	//this should be unique  to each XMPP message sent
 	private static String messageID =""; 
 	
-	private static final String ENDPOINT_HOST ="gcm.googleapis.com";//"gcm-preprod.googleapis.com";
+	private static final String ENDPOINT_HOST ="fcm-xmpp.googleapis.com";//"gcm-preprod.googleapis.com";
 	private static final int ENDPOINT_HOST_PORT =5235;
 	//Sender ID is required for the app server to GCM
 	//connection: user@domain/resource      user@gcm-preprod.googleapis.com/865254607161
