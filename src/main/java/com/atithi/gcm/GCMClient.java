@@ -61,7 +61,7 @@ public class GCMClient {
 		
 		if(config == null) {
 		config = new ConnectionConfiguration(ENDPOINT_HOST, ENDPOINT_HOST_PORT);
-		config.setSecurityMode(SecurityMode.enabled);
+		config.setSecurityMode(SecurityMode.disabled);
 		config.setReconnectionAllowed(true);
 		config.setRosterLoadedAtLogin(false);
 		config.setSendPresence(false);
