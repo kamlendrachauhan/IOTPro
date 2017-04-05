@@ -268,6 +268,7 @@ public class GCMClient {
         payload.put("message", file_URL);//"http://www.hdwallpapersact.com/wp-content/uploads/2012/05/sachin115.jpg"
         payload.put("title", "New Message from IOT");
         payload.put("body", "New Picture");
+        payload.put("click_action","com.google.firebase.quickstart.fcm.OPEN_ACTIVITY_1");
         final String collapseKey = "sample";
         Long timeToLive = 10000L;
         Boolean delayWhileIdle = true;
